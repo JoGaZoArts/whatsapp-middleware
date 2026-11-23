@@ -103,6 +103,11 @@ src/
 db/
 ├── schema.sql
 └── migrate.ts
+tools/
+├── demo-completa.ts        verificación completa del sistema
+├── demo-parar.ts           detiene el servidor de la demo
+├── color.ts                colores para la salida de terminal
+└── probar-anonimizacion.ts muestra el antes y después del anonimizado
 ```
 
 ## Seguridad

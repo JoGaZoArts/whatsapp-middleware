@@ -12,3 +12,8 @@ datos/
 
 # Documentacion interna (no se sube al repositorio)
 docs/
+
+# Herramientas de generacion de documentos (no se suben)
+tools/*informe*
+tools/*docx*
+tools/*texto*
