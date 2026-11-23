@@ -1,0 +1,43 @@
+# Variables de entorno. Copiar este archivo a .dev.vars y completar los valores.
+# El archivo .dev.vars esta en .gitignore y no debe subirse al repositorio.
+
+# --- Meta / WhatsApp Cloud API ---
+# Meta Business > System users > Generate token
+PHONE_NUMBER_ID=
+WHATSAPP_ACCESS_TOKEN=
+
+# App Secret de la app. Necesario para validar la firma de los webhooks.
+APP_SECRET=
+
+# Token de verificacion del webhook, definido en el panel de la app de Meta
+WEBHOOK_VERIFY_TOKEN=
+
+# --- Chatwoot ---
+# Secreto compartido para aceptar webhooks de Chatwoot.
+# Se envia en la cabecera x-chatwoot-token o como ?token=...
+CHATWOOT_WEBHOOK_SECRET=
+
+# --- IA ---
+# deepseek | compatible
+AI_PROVIDER=deepseek
+DEEPSEEK_API_KEY=
+
+# --- Servicios ---
+DATABASE_URL=
+# "mock" = no se llama a RD Station, solo se registra la carga
+RD_STATION_TOKEN=mock
+
+# --- Configuracion (tambien en wrangler.toml [vars]) ---
+# SLAs
+SLA_THRESHOLD_MINUTES=60
+# Canales que reportan respuestas salientes.
+SLA_CHANNELS=chatwoot
+# Tope de tareas por barrido.
+SLA_MAX_PER_RUN=100
+# Horario de atencion en America/Bogota
+BUSINESS_START_HOUR=8
+BUSINESS_END_HOUR=18
+# Festivos de Colombia, separados por coma (YYYY-MM-DD).
+# Si se deja vacio se calculan por regla para el ano actual y los vecinos.
+# Una lista explicita reemplaza el calculo.
+BUSINESS_HOLIDAYS=

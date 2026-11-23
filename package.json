@@ -1,0 +1,26 @@
+{
+  "name": "whatsapp-middleware",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "typecheck": "tsc --noEmit",
+    "migrate": "tsx db/migrate.ts",
+    "test": "tsx test/businesstime.test.ts && tsx test/anonymizer.test.ts",
+    "test:integration": "tsx test/integration.test.ts",
+    "test:sla": "tsx test/sla.test.ts",
+    "demo": "tsx tools/demo-completa.ts",
+    "demo:parar": "tsx tools/demo-parar.ts"
+  },
+  "dependencies": {
+    "@neondatabase/serverless": "^0.9.0",
+    "hono": "^4.13.9"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^5.20260928.1",
+    "tsx": "^4.23.15",
+    "typescript": "^5.0.0",
+    "wrangler": "^4.133.0"
+  }
+}

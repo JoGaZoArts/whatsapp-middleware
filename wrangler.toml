@@ -1,0 +1,25 @@
+name = "whatsapp-middleware"
+main = "src/index.ts"
+compatibility_date = "2024-09-23"
+
+# Solo configuracion NO sensible.
+# Los secretos van en .dev.vars (local) y con `wrangler secret put <NOMBRE>` (produccion).
+[vars]
+GRAPH_API_VERSION = "v25.0"
+DEFAULT_COUNTRY = "57"
+AI_PROVIDER = "deepseek"
+CRM_PROVIDER = "mock"
+SLA_THRESHOLD_MINUTES = "60"
+BUSINESS_START_HOUR = "8"
+BUSINESS_END_HOUR = "18"
+# Solo se auditan los canales que reportan respuestas salientes.
+SLA_CHANNELS = "chatwoot"
+SLA_MAX_PER_RUN = 100
+# Vacio = se calculan por regla (Ley 51 de 1983 y Ley 2578 de 2026) para el
+# ano actual y los vecinos. Si se llena, esas fechas reemplazan el calculo.
+BUSINESS_HOLIDAYS = ""
+
+# Barrido de SLA. Un webhook solo se dispara ante eventos, asi que "lleva 1h
+# sin responder" NO se puede detectar sin un job programado.
+[triggers]
+crons = ["*/15 * * * *"]
