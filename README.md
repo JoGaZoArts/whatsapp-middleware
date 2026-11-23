@@ -1,6 +1,23 @@
+<div align="center">
+
 # WhatsApp Business Middleware
 
-Middleware para WhatsApp Business que recibe mensajes, anonimiza datos personales, clasifica con IA (DeepSeek), mide tiempos de respuesta en horario laboral y conecta con el CRM. Corre en Cloudflare Workers + PostgreSQL (Neon).
+**Recepción autenticada, anonimización, clasificación con IA y control de tiempos de respuesta para WhatsApp Business.**
+
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![Cloudflare Workers](https://img.shields.io/badge/Cloudflare_Workers-F38020?style=flat-square&logo=cloudflare&logoColor=white)
+![Hono](https://img.shields.io/badge/Hono-E36002?style=flat-square)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
+![Tests](https://img.shields.io/badge/tests-74_passing-2ea44f?style=flat-square)
+![Chatwoot](https://img.shields.io/badge/Chatwoot-1F93FF?style=flat-square&logo=chatwoot&logoColor=white)
+![DeepSeek](https://img.shields.io/badge/DeepSeek-4D6BFE?style=flat-square)
+![Neon](https://img.shields.io/badge/Neon-00E599?style=flat-square&logo=neon&logoColor=white)
+
+</div>
+
+> Middleware que recibe los mensajes de WhatsApp de una empresa, anonimiza los datos personales, los clasifica con inteligencia artificial, mide el tiempo de respuesta en horario laboral y los conecta con el CRM. Todo corre sobre Cloudflare Workers (sin servidor propio) y PostgreSQL en Neon.
+
+---
 
 ## Arquitectura
 
