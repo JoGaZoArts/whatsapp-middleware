@@ -557,7 +557,7 @@ run.font.color.rgb = RGBColor(0x64, 0x74, 0x8b)
 
 pie2 = doc.add_paragraph()
 pie2.alignment = WD_ALIGN_PARAGRAPH.CENTER
-run = pie2.add_run('Repositorio del código: github.com/juanladinoxp/whatsapp-middleware (README con instrucciones de instalación y ejecución).')
+run = pie2.add_run('Repositorio del código: github.com/JoGaZoArts/whatsapp-middleware (README con instrucciones de instalación y ejecución).')
 run.font.size = Pt(9)
 run.font.color.rgb = RGBColor(0x64, 0x74, 0x8b)
 
